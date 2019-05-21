@@ -1,0 +1,16 @@
+{
+  "name": "html.ex",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Madara",
+  "license": "ISC",
+  "dependencies": {
+    "dark-sky": "^1.1.5",
+    "nodemon": "^1.18.10",
+    "validator": "^10.11.0"
+  }
+}

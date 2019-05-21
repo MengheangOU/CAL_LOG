@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+	<script>
+		function add()
+		{
+			var num1 = document.getElementById('aa1').value;
+			var num2 = document.getElementById('aa2').value;
+			var res = parseInt(num1)+parseInt(num2);
+			document.getElementById('aa').innerHTML = res;
+		}
+			
+	</script>
+</head>
+<body>
+	<fieldset>
+		<legend> <b> 1990's calculator</b> </legend>
+		<input type="text" id="aa1" placeholder="Enter the first value">
+		<input type="text" id="aa2" placeholder="Enter the second value"> <br>
+		<button onclick="add()">ADD</button>
+		<button onclick="sub()">SUB</button>
+		<button onclick="mul()">MUL</button>
+		<button onclick="div()">DIV</button>
+		<div id="aa">Answer...</div>
+
+</fieldset>
+
+	<br>
+	<fieldset>
+		<legend> <b> Submit everythig about you below</b> </legend>
+	<form action="validate.php" autocomplete="on" method="POST">
+		UserName: <input type="text" name="username" placeholder="username"> <br>
+		Password: <input type="type" name="password" placeholder="password"> <br>
+		Email: <input type="mail" name="email" placeholder="example@gamil.com"> <br>
+		DOB: <input type="date" name="dob"> <br>
+		Choose your file: <input type="file" name="yourfile"> <br>
+		Your color: <input type="color" name="yourcolor"> <br>
+		Choose your nation: <br>
+		<input type="radio" name="country" value="cambodia">CAMBODIA <br>
+		<input type="radio" name="country" value="japan">JAPAN <br>
+		<input type="radio" name="country" value="india">INDIA <br>
+		Choose your province: <br>
+		<select name="province">
+			<option value="BTB">Battambang</option>
+			<option value="SR">SiemReap</option>
+			<option value="PP">PhnomPenh</option>
+		</select>
+	</form>
+</fieldset>
+	
+</body>
+</html>
